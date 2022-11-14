@@ -1,2 +1,12 @@
-//Hei Yee Shane S10241966
-//CSS semantics and such
+/*  Hei Yee Shane S10241966
+    CSS semantics and such */
+
+    body{
+        background-color: black;
+    }
+
+    .imagebox{
+        width: 100%;
+        height: auto;
+        background-image: src = 'https://www.innersloth.com/wp-content/uploads/2021/06/hellowhatanicesurprise.png';
+    }
