@@ -1,12 +1,79 @@
 /*  Hei Yee Shane S10241966
     CSS semantics and such */
 
-    body{
-        background-color: black;
+    :root{
+        --background-color:rgb(1, 5, 11);
+        --bottom-border: rgb(255, 255, 255, 0.2);
+        --nav-stasis: #B2B2B2;
+        --nav-active: #FFFFFF;
+        --nav-border: #000000;
+        --discord: 	#7289DA;
+        --twitter: #1DA1F2;
+        --youtube: #FF0000;
     }
 
-    .imagebox{
-        width: 100%;
-        height: auto;
-        background-image: src = 'https://www.innersloth.com/wp-content/uploads/2021/06/hellowhatanicesurprise.png';
+    body{
+        background-color: var(--background-color);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 0px;
+        overflow: hidden;
     }
+
+   nav{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--bottom-border);
+    background-color: var(--nav-border);
+   }
+
+   nav > .nav-section{
+    padding: 1rem 3rem;
+    display: flex;
+    gap: 20px;
+    border-left: 1px solid var(--bottom-border); 
+    align-items: center;
+   }
+
+   #nav-logo{
+    flex-basis: 60%;
+   }
+
+   #nav-social{
+    flex-grow: 1;
+   }
+
+   #nav-title{
+    flex-grow: 1;
+    justify-content: space-evenly;
+   }
+
+   *{
+    box-sizing: border-box;
+   }
+
+   .nav-section a,b,c,d{
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--nav-stasis);
+    transition: 0.4s;
+   }
+
+   .nav-section a:hover, .nav-section a:focus{
+    color: var(--nav-active);
+   }
+
+   .nav-section b:hover, .nav-section b:focus{
+    color: var(--discord);
+   }
+
+   .nav-section c:hover, .nav-section c:focus{
+    color: var(--twitter);
+   }
+
+   .nav-section d:hover, .nav-section d:focus{
+    color: var(--youtube);
+   }
+
+
