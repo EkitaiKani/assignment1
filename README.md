@@ -8,6 +8,9 @@ Added the nav bar:
 3 menu buttons that directs user to 3 different subpages (to be added)
 logos that bring user to social media pages
 
+Made some changes to the nav bar:
+Added clickable logo and subpages
+changed the font
 
 References:
 discord colour:
@@ -26,7 +29,10 @@ tutorial on text animation (and also overlay which i will prob do another time):
 https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
 
 icons taken from front awsome:
-https://fontawesome.com 
+https://fontawesome.com
 
 also some colours palettes:
-https://colorhunt.co 
+https://colorhunt.co
+
+fonts taken from google fonts: (quicksand)
+https://fonts.google.com

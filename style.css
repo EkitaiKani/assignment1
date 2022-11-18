@@ -36,12 +36,20 @@
     align-items: center;
    }
 
+   .logo-container{
+    width: 200px;
+    height: auto;
+    display: block;
+   }
+
    #nav-logo{
     flex-basis: 60%;
    }
 
    #nav-social{
     flex-grow: 1;
+    align-content: center;
+    justify-content: space-around;
    }
 
    #nav-title{
@@ -53,26 +61,33 @@
     box-sizing: border-box;
    }
 
-   .nav-section a,b,c,d{
+   p,h1,h2,h3,h4,h5,h6,a,b,c,d{
     text-decoration: none;
     font-size: 15px;
     color: var(--nav-stasis);
     transition: 0.4s;
+    font-family: 'Quicksand', sans-serif;
    }
 
-   .nav-section a:hover, .nav-section a:focus{
+   .nav-section logo{
+    display: flex;
+    flex-direction: column;
+    flex: 1 21%;
+}
+
+   #nav-title a:hover, #nav-title a:focus{
     color: var(--nav-active);
    }
 
-   .nav-section b:hover, .nav-section b:focus{
+   .discord:hover, .discord:focus{
     color: var(--discord);
    }
 
-   .nav-section c:hover, .nav-section c:focus{
+   .twitter:hover, .twitter:focus{
     color: var(--twitter);
    }
 
-   .nav-section d:hover, .nav-section d:focus{
+   .youtube:hover, .youtube:focus{
     color: var(--youtube);
    }
 
