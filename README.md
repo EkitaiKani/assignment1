@@ -25,8 +25,10 @@ https://usbrandcolors.com/youtube-colors/
 video on nav:
 https://www.youtube.com/watch?v=nG2IyH43xMU
 
-tutorial on text animation (and also overlay which i will prob do another time):
+tutorials from w3 schools:
 https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
+https://www.w3schools.com/howto/howto_css_image_text.asp
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_round_buttons
 
 icons taken from front awsome:
 https://fontawesome.com
