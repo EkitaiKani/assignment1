@@ -4,11 +4,29 @@ Design and develop a responsive website for a company revamp (real or fictional)
 
 Chosen company/product to promote among us
 
-Added the nav bar:
+# Major commit 2
+
+## Made index.html responsive (mobile friendly)
+
+Background (to be replaced) did not cover the whole page, disappearing when screen size was too small
+Now background fits to all screens (i think)
+
+Navbar now becomes smaller when screen is smaller, replacing subpages with a burger (overlay to be added)
+
+## Made some changes to the nav bar
+
+The navbar now brings users to the separate pages (they are still empty)
+All links in the nav bar are working.
+
+# Major Commit 1
+
+## Added the nav bar:
+
 3 menu buttons that directs user to 3 different subpages (to be added)
 logos that bring user to social media pages
 
-Made some changes to the nav bar:
+###### Made some changes to the nav bar:
+
 Added clickable logo and subpages
 changed the font
 
