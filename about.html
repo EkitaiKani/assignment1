@@ -16,44 +16,120 @@
 
 </head>
 
-<nav>
+<nav class="navbar">
     <div id="nav-logo" class="nav-section">
-        <a href="index.html">
-            <i class="home-page"></i>
-            <img src="img\amongus_logo.png" title="AMOGUS" alt="AMOGUS" width="200px">
-        </a>
-    </div>
-        
-    <div id="nav-title" class="nav-section"> 
-        <a href="about.html">ABOUT</a>
-        <a href="shop.html">SHOP</a>
-        <a href="contact.html">CONTACT</a>
-    </div>
+       <a href="index.html">
+       <i class="home-page"></i>
+       <img src="img\amongus_logo.png" title="AMOGUS" alt="AMOGUS" width="150">
+       </a>
+   </div>
+       
+   <div id="nav-title" class="nav-section"> 
+       <a href="about.html">ABOUT</a>
+       <a href="shop.html">SHOP</a>
+       <a href="contact.html">CONTACT</a>
+   </div>
+   
+   <div id="nav-social" class="nav-section">
+       <a class="discord" href="https://discord.com/invite/innersloth" target="_blank">
+           <i class="fa-brands fa-discord"></i>
+       </a>
+       <a class="twitter" href="https://twitter.com/InnerslothDevs" target="_blank">
+           <i class="fa-brands fa-twitter" ></i>
+       </a>
+       <a class="youtube" href="https://www.youtube.com/channel/UCKuI2VapWQjkMz2DDrLvLKw" target="_blank">
+           <i class="fa-brands fa-youtube"></i>
+       </a>
+   </div>
+   
+   
+   
+   <!-- overlay-->
+   <div class="toggle" onclick="openNav()">
+       <span class="bar"></span>
+       <span class="bar"></span>
+       <span class="bar"></span>
+   </div>
 
+   <div id="Nav" class="overlay">
+       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+       <div class="overlay-content">
+           <a href="about.html">ABOUT</a>
+           <a href="shop.html">SHOP</a>
+           <a href="contact.html">CONTACT</a>
+       </div> 
 
-    </div>
-    </div>
-    <div id="nav-social" class="nav-section">
-        <a class="discord" href="https://discord.com/invite/innersloth" target="_blank">
-            <i class="fa-brands fa-discord"></i>
-        </a>
-        <a class="twitter" href="https://twitter.com/InnerslothDevs" target="_blank">
-            <i class="fa-brands fa-twitter" ></i>
-        </a>
-        <a class="youtube" href="https://www.youtube.com/channel/UCKuI2VapWQjkMz2DDrLvLKw" target="_blank">
-            <i class="fa-brands fa-youtube"></i>
-        </a>
-
-    </div>
+       <div class="overlay-content">
+           <div class="row-content">
+               <a class="discord" href="https://discord.com/invite/innersloth" target="_blank">
+                   <i class="fa-brands fa-discord"></i>
+               </a>
+               <a class="twitter" href="https://twitter.com/InnerslothDevs" target="_blank">
+                   <i class="fa-brands fa-twitter" ></i>
+               </a>
+               <a class="youtube" href="https://www.youtube.com/channel/UCKuI2VapWQjkMz2DDrLvLKw" target="_blank">
+                   <i class="fa-brands fa-youtube"></i>
+               </a>
+           </div>
+       </div>
+   </div>
 </nav>
 
-<body>
-    <div class="centered">
-        <h1>Among Us is a game of teamwork,<br>
-            <span style="color: red;">lies</span> and <span style="color: red;">deception</span>
-        <p>As crewmates, work together to finish your tasks before the imposters eliminate everyone.</p>
 
-    </div>
+<body>
+    <section>
+        <div class="centered">
+            <h1>Among Us is a game of teamwork,<br>
+                <span style="color: red;">lies</span> and <span style="color: red;">deception</span>
+            <p>As crewmates, work together to finish your tasks before the imposters eliminate everyone.</p>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <img src="img/crew.png">
+
+            <div class="cardcontainer">
+                <div class="text-card">
+                    <h3>Complete tasks</h3>
+                    <p>Fill up the task bar before the imposters eliminate everyone.</p>
+                </div>
+                <div class="text-card">
+                    <h3>Eject the imposters</h3>
+                    <p>Discuss and vote out the most suspicious people during meetings. </p>
+                </div>
+                <div class="text-card">
+                    <h3>Keep an alibi</h3>
+                    <p>Be ready if someone accuses you of being an imposter.</p>
+                </div>
+            </div>
+            <img src="img/notsus.png">
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <img src="img/pasta.webp">
+            <div class="flex">
+            <div class="cardcontainer">
+                <div class="text-card">
+                    <h3>Complete tasks</h3>
+                    <p>Fill up the task bar before the imposters eliminate everyone</p>
+                </div>
+                <div class="text-card">
+                    <h3>Complete tasks</h3>
+                    <p>Fill up the task bar before the imposters eliminate everyone</p>
+                    </div>  
+                <div class="text-card">
+                    <h3>Complete tasks</h3>
+                    <p>Fill up the task bar before the imposters eliminate everyone</p>
+                </div>
+            </div>
+            </div>
+            <img src="img/sus.png">
+        </div>
+    </section>
+
 </body>
 
 
