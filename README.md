@@ -3,13 +3,21 @@
 Design and develop a responsive website for a company revamp (real or fictional) or a fictional company site of your own
 Chosen company/product to promote among us (big mistake)
 
+#### Oops
+
+fixed nav bar to work on mobile for all pages (now all pages have burger)
+Also a side note i made the about page look better(?)
+
 # Major commit 3
+
 Made the nav bar work for mobile, added overlay for burger (drop down overlay)
+
 #### Added javascript file for the burger
 
 ## About page
+
 added some assets to the about page
-now has 3 sections: 1 main title, crewmate and imposter roles 
+now has 3 sections: 1 main title, crewmate and imposter roles
 
 # Major commit 2
 
@@ -56,6 +64,7 @@ tutorials from w3 schools:
 https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
 https://www.w3schools.com/howto/howto_css_image_text.asp
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_round_buttons
+https://www.w3schools.com/css/css_form.asp
 
 icons taken from front awsome:
 https://fontawesome.com
@@ -65,4 +74,3 @@ https://colorhunt.co
 
 fonts taken from google fonts: (quicksand)
 https://fonts.google.com
-
