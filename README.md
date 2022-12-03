@@ -148,13 +148,14 @@ https://www.youtube.com/watch?v=At4B7A4GOPg (navbar)
 https://www.youtube.com/watch?v=VplDlwLTR50 (reveal on scroll)
 https://www.youtube.com/watch?v=d34GsFz-HkY (parallax background)
 
-tutorials from w3 schools:
+tutorials from w3 schools and others:
 https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
 https://www.w3schools.com/howto/howto_css_image_text.asp
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_round_buttons
 https://www.w3schools.com/css/css_form.asp
 https://www.w3schools.com/jsref/met_win_settimeout.asp
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fullscreen_video
+https://bobbyhadz.com/blog/javascript-clear-input-field-after-submit
 
 icons taken from front awsome:
 https://fontawesome.com
