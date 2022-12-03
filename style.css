@@ -3,7 +3,7 @@
     ALSO KNOWN AS PAIN AND SUFFERING */
 
     :root{
-        --background-color:rgb(1, 5, 11);
+        --background-color:rgba(3,3,3,255);
         --bottom-border: rgb(255, 255, 255, 0.2);
         --nav-stasis: #B2B2B2;
         --nav-active: #FFFFFF;
@@ -12,6 +12,7 @@
         --twitter: #1DA1F2;
         --youtube: #FF0000;
         --button: #318CE7;
+        --button-hover: #009EFF;
     }
 
     body{
@@ -19,13 +20,9 @@
         display: flex;
         flex-direction: column;
         height: 100%;
-        margin: 0px;
         margin: 0;
     }
-    img{
-        border: 0;
-        height: auto;
-    }
+
     
     /* Nav bar pain starts here*/
    nav{
@@ -50,6 +47,7 @@
     max-width: 100%;
     min-width: 100px;
     height: auto;
+    align-content: center;
    }
 
    #nav-social, #nav-title{
@@ -69,10 +67,13 @@
 
 
    h1,h2,h3{
-    color: var(--nav-active);
     text-decoration: none;
     font-family: 'Varela Round', sans-serif;
     text-align: center;
+   }
+
+   h1,h2{
+    color: var(--nav-active);
    }
 
 
@@ -84,11 +85,12 @@
     text-align: center;
    }
 
-   .nav-section logo{
+   .logo{
     display: flex;
-    flex-direction: column;
-    flex: 1 21%;
-    }
+    flex-grow: 1;
+    width: 65%;
+    max-width: 250px;
+   }
 
    #nav-title a:hover, #nav-title a:focus,
    #Nav a:hover, #Nav a:focus{
@@ -169,14 +171,34 @@
    /*start of index page */
 
    .bg{
-    background-image: url("img/amongus_bg.png");
-    height: 1000px;
-    background-position: center;
+    min-height: 1000px;
+    height: 100%;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     position: relative;
-    width: 100%;
+
+    box-sizing: border-box;
+
    }
+
+   #myVideo {
+    position: fixed;
+    bottom: 100px;
+    min-width: 100%; 
+    min-height: 100%;
+  }  
+
+   .static{
+    background-image: url("img/amongus_bg.png");
+   }
+
+   .active{
+    background-image: url(img/trailer.mp4);
+    
+   }
+
 
    .center{
     text-align: center;
@@ -187,15 +209,27 @@
     color: white;
    }
 
+   .center{
+    justify-content: center;
+   }
+
     
-   .container{
+   .container, .reversed{
     display: flex;
+	width: 100%;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 
    }
 
+
    .main-logo{
+    display: flex;
     padding-bottom: 2rem;
+    flex-grow: 1;
+    max-width: 100%;
+    min-width: 300px;
    }
 
    .main-container{
@@ -267,6 +301,11 @@
         border-radius: 40px;
         width: auto;
     }
+
+    .button:hover, .button:focus{
+        background-color: var(--button-hover);
+    }
+
     
     /*about page */
 
@@ -283,6 +322,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-bottom: 100px;
     }
 
     #about:nth-child(2){
@@ -299,31 +339,50 @@
     }
 
     .cardcontainer{
-        display: flex;
-        align-items: center;
+        padding: 2%;
+		flex-grow: 1;
+		flex-basis: 15%;
+
+		display: flex;
+		flex-direction: row;
     }
 
-
-
-    section .text-card{
+    .text-card{
         display: flex;
+        flex-grow: 1;
         margin: 15px;
         padding: 25px;
+
         max-width: 20rem;
         min-width: 10rem;
+        
         flex-direction: column;
-        text-align: center;
+
+        background-size: cover;
+        justify-content: center;
     }
+
+    .text-card img, .email-card img{
+        width: 100%;
+    }
+
+    .flex{
+        padding-top: 20px;
+        max-width: 100%;
+    }
+    .reversed{
+        flex-flow: row-reverse;
+    }
+
 
     @media (max-width: 920px){  
         .cardcontainer{
             flex-direction: row;
         }
-        .container{
+        .container, .reversed{
             flex-direction: row;
         }
-        .text-card{
-            display: flex;
+        .text-card, .email-card{
             flex-direction: column;
             flex: 1 21%;
           }
@@ -333,12 +392,14 @@
         color: #000000;
     }
     .displayimg{
-        min-width: 400px;
+        min-width: 300px;
         max-width: 600px;
     }
 
 
     @media (max-width: 720px){
+
+
         .toggle{
             display: block;
         }
@@ -347,25 +408,43 @@
             display: none;
         }
         
-        .cardcontainer{
+    
+        .container,.reversed{
+            flex-flow: column;
+        }
+
+        .text-card, .email-card{
             flex-direction: column;
-        }
-        .box{
-            width: 100%;
-        }
-        .container{
-            flex-direction: column;
-        }
-        .text-card{
-            display: flex;
-            flex-direction: row;
-            flex: 1 21%;
+            flex: 0 45%;
           }
-        .reversed{
-            flex-flow: column-reverse;
-        }
+
+
     }
 
+    @media (max-width: 375px){
+
+        .text-card, .email-card{
+            flex-direction: column;
+            flex: 0 45%;
+          }
+
+
+
+    }
+
+    .reveal{
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: all 1.5s ease;
+    }
+
+    .reveal.act{
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+    
 
     /* Contact Page*/
 
@@ -388,18 +467,20 @@
         align-items: center;
     }
     .box{
-        text-decoration: none;
-        border: 3px solid  var(--nav-stasis);
-        font-size: 20px;
-        color: white;
-        border-radius: 30px;
         display: flex;
-        padding: 10px 15px;
-        justify-content: center;
+        text-decoration: none;
+        font-size: 25px;
+
+        flex-direction: column;
+    }
+
+    .contact-bg{
+        background: url(img/randombg.png);
+        background-size: cover;
     }
 
     input[type=text], select {
-        width: 90%;
+        min-width: 90%;
         padding: 10px 15px;
         margin: 8px 0;
         display: inline-block;
@@ -413,7 +494,7 @@
       }
 
       textarea {
-        width: 400px;
+        min-width: 300px;
         height: 100px;
         box-sizing: border-box;
         border: 2px solid #ccc;
@@ -437,11 +518,72 @@
         border-radius: 30px;
         width: 100%;
     }
+
+    .sbutton:hover, .sbutton:focus{
+        background-color: var(--button-hover);
+    }
+
     .idk{
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
+    }
+
+    .back{
+        background-color: #F3EFE0;
     }
     
+    .email-card{
+        display: flex;
+        flex-grow: 1;
+        margin: 15px;
+        padding: 25px;
 
+        min-width: 250px;
+        max-width: 300px;
+        
+        flex-direction: column;
+    }
+
+    /*shop page*/
+
+    .drip{
+        min-width: 100px;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .space-shop{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--background-color);
+    }
+
+    .drip{
+        color: #0D4C92;
+        font-size: 30px;
+    }
+
+    .column{
+        flex-direction: column;
+    }
+
+    .pcontainer{
+        max-width: 100%;
+        margin: 0;
+        padding: 25px;
+        align-items: center;
+    }
+
+    .parallax{
+        background: url(img/eject.gif) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 1000px;
+    }
 
 
     
