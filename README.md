@@ -38,7 +38,7 @@ I had to undo the commits until i found the file.
    First part of the page contains a link to the official FAQ page.
    Second part displays the official emails of the game
    Last part displays a form where the user can submit their feedback
-
+   Form resets when user presses the submit button
 
 # Major Commit 5
 
