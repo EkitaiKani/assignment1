@@ -517,6 +517,7 @@
         color: white;
         border-radius: 30px;
         width: 100%;
+        cursor: pointer;
     }
 
     .sbutton:hover, .sbutton:focus{

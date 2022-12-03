@@ -8,23 +8,6 @@ function openNav() {
     document.getElementById("Nav").style.height = "0%";
   }
 
-  if (document.URL.includes("index.html")){
-
-    const time = setTimeout(play, 5000);
-
-  function play() {
-    let el = document.getElementsByClassName("static")
-    el[0].className = "bg active"
-  }
-
-  const end = setTimeout(stop, 51000);
-
-  function stop() {
-    let el = document.getElementsByClassName("active")
-    el[0].className = "bg static"
-  }
-
-  }
 
     window.addEventListener('scroll', reveal)
 
@@ -47,9 +30,22 @@ function openNav() {
     }
     }
 
-    function submit(){
-      document.getElementById("idform").reset();
-    }
+  const button = document.getElementById('button');
+
+  button.addEventListener('click', function handleClick(event) {
+    event.preventDefault();
+
+    const inputs = document.querySelectorAll('#email, #title, #desc');
+
+    inputs.forEach(input => {
+      input.value = '';
+    });
+  });
+
+  function alert(){
+    alert("Thanks for the feedback!");
+  }
+
 
   
   

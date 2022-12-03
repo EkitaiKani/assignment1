@@ -133,21 +133,20 @@
 
     <section class="somespace contact-bg" >
         <div class="container">
-            <div class="box">
-            <h1>Got feedback?</h1>
             <form id="idform" class="box">
-                <div class="form">
-                    <label for="email">Enter your email</label>
-                    <input type="text" placeholder="Your email...">
 
-                    <label for="title">Enter the title</label>
-                    <input type="text" placeholder="Your title..."><br>
+                <h1>Have feedback?</h1>
 
-                    <label for="feedback">Description</label><br>
-                    <textarea placeholder=" Description..."></textarea><br>
+                <label for="email">Enter your email</label><br>
+                <input type="text" id="email" placeholder="Your email..."><br>
 
-                    <input type="button" class="sbutton" onclick="submit()" value="Submit"></input>
-                </div>
+                <label for="title">Enter the title</label><br>
+                <input type="text" id="title" placeholder="Your title..."><br>
+
+                <label for="feedback">Description</label><br>
+                <textarea id="desc" placeholder=" Description..."></textarea><br>
+
+                <button id="button" class="sbutton" onclick="alert()">Submit</button>
             </form>
         </div>
     </section>
