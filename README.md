@@ -3,6 +3,12 @@
 Design and develop a responsive website for a company revamp (real or fictional) or a fictional company site of your own
 Chosen company/product to promote among us (big mistake)
 
+# IMPORTANT
+
+This most recent commit has 3 separate commits within it.
+I made a mistake and tried to commit a file that was larger than 100mb. This caused github to be unable to sync the changes.
+I had to undo the commits until i found the file.
+
 # Currently:
 
 1. The nav bar
@@ -32,6 +38,7 @@ Chosen company/product to promote among us (big mistake)
    First part of the page contains a link to the official FAQ page.
    Second part displays the official emails of the game
    Last part displays a form where the user can submit their feedback
+
 
 # Major Commit 5
 
