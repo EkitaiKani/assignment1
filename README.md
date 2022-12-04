@@ -21,6 +21,7 @@ I had to undo the commits until i found the file.
 2. The index page
    Shows the logo as well as a button which brings you to the official website.
    Background autoplays the video trailers of the game.
+   If the user's browser does not support HTML5 format the background is an image instead.
 
 3. The about page
    This is a page which shows the users the main objective of the game and how to play.
@@ -39,6 +40,10 @@ I had to undo the commits until i found the file.
    Second part displays the official emails of the game
    Last part displays a form where the user can submit their feedback
    Form resets when user presses the submit button
+
+## Minor commit
+Index page has background when browser does not support HTML5 Format
+About page gif now has a larger height.
 
 # Major Commit 5
 
